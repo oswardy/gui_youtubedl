@@ -2,7 +2,10 @@
 
 1. [Download and install latest Python release](https://www.python.org/downloads/)
 2. [Download the Python code](https://raw.githubusercontent.com/wow32/gui_youtubedl/master/gui.py)
-3. Run the Python code
+3. Open command prompt and navigate to the location where you downloaded the code then run the command below
+ ```
+ python gui.py
+ ```
 
 
 ## Linux Installation
