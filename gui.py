@@ -8,10 +8,12 @@ try:
 	import requests #Verify YouTube URL link
 	import easygui as ez #ez
 	import youtube_dl #module to download app
+	import ffprobe
+	import ffmpeg
 except ImportError:
-	for req in ["requests", "easygui", "youtube_dl"]:
+	for req in ["requests", "easygui", "youtube_dl", "ffprobe", "ffmpeg"]:
 		subprocess.call([sys.executable, '-m', 'pip', 'install', req])
-		
+
 #Define download format
 ydl_opts = {
     'format': 'bestaudio/best',
