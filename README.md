@@ -23,3 +23,5 @@ python3 gui.py
 - https://stackoverflow.com/questions/19377262/regex-for-youtube-url
 - https://github.com/ytdl-org/youtube-dl/blob/master/README.md#embedding-youtube-dl
 - https://stackoverflow.com/questions/44210656/how-to-check-if-a-module-is-installed-in-python-and-if-not-install-it-within-t
+- https://pypi.org/project/auto-py-to-exe/
+- https://unix.stackexchange.com/questions/272868/download-only-format-mp4-on-youtube-dl
