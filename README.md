@@ -1,1 +1,22 @@
-# gui_youtubedl
+## Windows Installation
+
+1. [Download and install latest Python release](https://www.python.org/downloads/)
+2. [Download the Python code](https://raw.githubusercontent.com/wow32/gui_youtubedl/master/gui.py)
+3. Run the Python code
+
+
+## Linux Installation
+```
+sudo apt-get install python3.6
+git clone https://github.com/wow32/gui_youtubedl.git
+cd gui_youtubedl
+python3 gui.py
+```
+
+
+## References
+- https://stackoverflow.com/questions/22188128/how-to-gather-string-form-easygui-enterbox
+- http://easygui.sourceforge.net/tutorial.html#using-buttonboxes
+- https://stackoverflow.com/questions/19377262/regex-for-youtube-url
+- https://github.com/ytdl-org/youtube-dl/blob/master/README.md#embedding-youtube-dl
+- https://stackoverflow.com/questions/44210656/how-to-check-if-a-module-is-installed-in-python-and-if-not-install-it-within-t
