@@ -29,11 +29,10 @@ ydl_opts = {
     }]
 }
 
-#Niama jibai
-ez.msgbox("Hello, world!", "Niama jibai")
+ez.msgbox("Welcome to YouTube dl GUI!")
 
 #Get user input
-url = ez.enterbox("Please enter a YouTube URL\n(Eg. https://www.youtube.com/watch?v=TPqTDtKiTIE)", "Niama jibai")
+url = ez.enterbox("Please enter a YouTube URL\n(Eg. https://www.youtube.com/watch?v=TPqTDtKiTIE)", "YouTube_dl GUI")
 
 '''
 1. First check: Check whether URL is null
@@ -42,10 +41,10 @@ url = ez.enterbox("Please enter a YouTube URL\n(Eg. https://www.youtube.com/watc
 '''
 if (url) and re.match("^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+$", str(url)):
 	r = requests.head(str(url))
-	if r.status_code is 200:
+	if r.status_code == 200:
 		with youtube_dl.YoutubeDL(ydl_opts) as ydl:
 			meta = ydl.extract_info(str(url), download=False)
-			if ez.ccbox("Title: " + str(meta['title']) + "\nDuration: " + str(meta['duration']) + " seconds\nProceed to download?", "Niama jibai"):
+			if ez.ccbox("Title: " + str(meta['title']) + "\nDuration: " + str(meta['duration']) + " seconds\nProceed to download?", "GUI Dl"):
 					pass
 			else: 
 				sys.exit(0)
@@ -53,13 +52,13 @@ if (url) and re.match("^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+$", str
 		ez.msgbox("This video doesn't exist, please try with another video")
 		sys.exit(0)
 else:
-	ez.msgbox("Sorry, the URL you input is invalid, please try with another URL", "Niama Jibai")
+	ez.msgbox("Sorry, the URL you input is invalid, please try with another URL", "YouTube_dl GUI")
 	sys.exit(0)
 
 #Downloads the video URL as mp3 and save in current file destination
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
 	meta = ydl.extract_info(str(url), download=True)
-	ez.msgbox("Success! File is saved in " + os.getcwd(), "Niama Jibai")
+	ez.msgbox("Success! File is saved in " + os.getcwd(), "YouTube_dl GUI")
 
 '''
 TODO
