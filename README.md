@@ -1,3 +1,7 @@
+## Releases
+- [Windows](https://github.com/wow32/gui_youtubedl/releases/download/v1.0/windows_youtube_dl_gui.exe)
+- [Linux](https://github.com/wow32/gui_youtubedl/releases/download/v1.0/linux_youtube_dl_gui)
+
 ## Windows Installation
 
 1. [Download and install latest Python release](https://www.python.org/downloads/)
