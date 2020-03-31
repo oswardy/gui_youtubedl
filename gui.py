@@ -24,10 +24,6 @@ ydl_opts = {
     }]
 }
 
-ydl_opts_raw = {
-	
-}
-
 def getUserInput():
 	#Get user input
 	url = ez.enterbox("Please enter a YouTube URL\n(Eg. https://www.youtube.com/watch?v=TPqTDtKiTIE)", "YouTube_dl GUI")
@@ -54,9 +50,8 @@ def getUserInput():
 
 def download_MP3(url):
 	#Downloads the video URL as mp3 and save in current file destination
-	with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-		meta = ydl.extract_info(str(url), download=True)
-		ez.msgbox("Success! File is saved in " + os.getcwd(), "YouTube_dl GUI")
+	subprocess.call(['youtube-dl', '-f', 'bestaudio', url])
+	ez.msgbox("Success! File is saved in " + os.getcwd(), "YouTube_dl GUI")
 
 def download_MP4(url):
 	#I gave up finding the option to trigger MP4 file download
