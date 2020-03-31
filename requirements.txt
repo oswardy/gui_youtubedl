@@ -1,0 +1,5 @@
+requests
+easygui
+youtube_dl
+ffprobe
+ffmpeg
