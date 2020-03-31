@@ -1,11 +1,13 @@
 ## Windows Installation
 
-1. [Download and install latest Python release](https://www.python.org/downloads/)
-2. [Download the Python code](https://raw.githubusercontent.com/wow32/gui_youtubedl/master/gui.py)
-3. Open command prompt and navigate to the location where you downloaded the code then run the command below
- ```
- python gui.py
- ```
+1. Make sure you have Python3 installed, you can get the latest version [here](https://www.python.org/downloads/)
+2. [Download the repository as ZIP file](https://github.com/wow32/gui_youtubedl/archive/master.zip)
+3. Unzip the file
+4. Install the requirements and run the script
+```
+pip install -r requirements.txt
+python gui.py
+```
 
 
 ## Linux Installation
