@@ -54,7 +54,7 @@ def download_MP4(url):
 def main():
 	repeat = True
 	while repeat == True:
-		do_what = ez.indexbox("Welcome to YouTube dl GUI!\nWhat would you look to do today?", "YouTube_dl GUI", choices=("Download MP3", "Download MP4", "Exit"))
+		do_what = ez.indexbox("Welcome to YouTube dl GUI!\nWhat would you like to do today?", "YouTube_dl GUI", choices=("Download MP3", "Download MP4", "Exit"))
 		if do_what == 0:
 			url = getUserInput()
 			download_MP3(url)
