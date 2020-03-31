@@ -30,3 +30,4 @@ python3 gui.py
 - https://unix.stackexchange.com/questions/272868/download-only-format-mp4-on-youtube-dl
 - https://pyinstaller.readthedocs.io/en/latest/operating-mode.html
 - https://github.com/pyinstaller/pyinstaller
+- https://github.com/ytdl-org/youtube-dl/issues/4886
