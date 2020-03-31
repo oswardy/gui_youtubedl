@@ -13,6 +13,7 @@
 sudo apt-get install python3.6
 git clone https://github.com/wow32/gui_youtubedl.git
 cd gui_youtubedl
+pip install -r requirements.txt
 python3 gui.py
 ```
 
