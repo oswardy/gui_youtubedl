@@ -43,12 +43,12 @@ def getUserInput():
 
 def download_MP3(url):
 	#Downloads the video URL as mp3 and save in current file destination
-	subprocess.call(['youtube-dl', '--extract-audio', '--audio-format', 'mp3',url])
+	subprocess.call(['youtube-dl', '--extract-audio', '--audio-format', 'mp3',url], shell=True)
 	ez.msgbox("Success! File is saved in " + os.getcwd(), "YouTube_dl GUI")
 
 def download_MP4(url):
 	#I gave up finding the option to trigger MP4 file download
-	subprocess.call(['youtube-dl', '--format', "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best", url])
+	subprocess.call(['youtube-dl', '--format', "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best", url], shell=True)
 	ez.msgbox("Success! File is saved in " + os.getcwd(), "YouTube_dl GUI")		
 
 def main():
