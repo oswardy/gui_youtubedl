@@ -2,10 +2,9 @@
 
 1. Make sure you have Python3 installed, you can get the latest version [here](https://www.python.org/downloads/)
 2. [Download the repository as ZIP file](https://github.com/wow32/gui_youtubedl/archive/master.zip)
-3. Unzip the file
-4. Unzip ffmpeg.exe.gz into ffmpeg.exe
-5. Open CMD and navigate to the directory
-4. Run the command below
+3. Download ffmpeg from [here](https://ffmpeg.zeranoe.com/builds/) and install it
+4. Open command prompt and navigate to the repo directory
+5. Run the command below
 ```
 pip3 install -r requirements.txt
 python gui.py
