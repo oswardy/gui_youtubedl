@@ -53,7 +53,7 @@ def download_mkv(url):
 def main():
 	repeat = True
 	while repeat == True:
-		do_what = ez.indexbox("Welcome to YouTube dl GUI!\nWhat would you like to do today?", "YouTube_dl GUI", choices=("Download MP3", "Download MKV", "Exit"))
+		do_what = ez.indexbox("Welcome to YouTube dl GUI!\nWhat would you like to do today?", "YouTube_dl GUI", choices=("Download MP3", "Download video", "Exit"))
 		if do_what == 0:
 			url = getUserInput()
 			download_MP3(url)
