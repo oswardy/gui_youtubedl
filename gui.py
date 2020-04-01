@@ -1,4 +1,3 @@
-from __future__ import unicode_literals #encoding issues
 import re #Using regular expressions to check valid YouTube URLs
 import sys #Exit functions
 import os #Current directory
@@ -46,21 +45,21 @@ def download_MP3(url):
 	subprocess.call(['youtube-dl', '--extract-audio', '--audio-format', 'mp3',url], shell=True)
 	ez.msgbox("Success! File is saved in " + os.getcwd(), "YouTube_dl GUI")
 
-def download_MP4(url):
-	#I gave up finding the option to trigger MP4 file download
+def download_mkv(url):
+	#I gave up finding the option to trigger mkv file download
 	subprocess.call(['youtube-dl', '--format', "bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best", url], shell=True)
 	ez.msgbox("Success! File is saved in " + os.getcwd(), "YouTube_dl GUI")		
 
 def main():
 	repeat = True
 	while repeat == True:
-		do_what = ez.indexbox("Welcome to YouTube dl GUI!\nWhat would you like to do today?", "YouTube_dl GUI", choices=("Download MP3", "Download MP4", "Exit"))
+		do_what = ez.indexbox("Welcome to YouTube dl GUI!\nWhat would you like to do today?", "YouTube_dl GUI", choices=("Download MP3", "Download MKV", "Exit"))
 		if do_what == 0:
 			url = getUserInput()
 			download_MP3(url)
 		elif do_what == 1:
 			url = getUserInput()
-			download_MP4(url)
+			download_mkv(url)
 		else:
 			sys.exit(0)
 		repeat = ez.boolbox("Do you wish to start again?", "YouTube_dl GUI", ("Yes", "No"))
